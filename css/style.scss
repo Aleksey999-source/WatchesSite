@@ -52,6 +52,7 @@ $md4: 480;
 
     @media (max-width:$md1 + px)
     {
+    
         max-width: 750px;
     }
 
@@ -60,7 +61,6 @@ $md4: 480;
         
         padding: 0 10px;
     }
-dss
 }
 //-------------------------------------------------------------------------------------------------------------------------------------
 
@@ -233,6 +233,126 @@ h2{
         right: -200px;
         @media(max-width:$md1+px){
             display: none;
+        }
+    }
+}
+//services-----------------
+.service{
+    text-align: center;
+    min-height: 1200px;
+
+    .service__content{
+
+        .service__title{
+            margin-top: 95px;
+        }
+        .service__description{
+            margin-top: 25px;
+        }
+        .service__main{
+            @media(max-width: $md1 + px){
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+               }
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            .service__items{
+                .service__item{
+                    margin: 180px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    i{
+                        font-size: 30px;
+                        color: #6565EC;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+                .item__about{
+                    width: 170px;
+                    height: 40px;
+                    .item__title{
+                        margin-top: 30px;
+                        font-weight: 600;
+                        font-size: 21px;
+                    }
+                    .item__description{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.item--circle{
+    display:block;
+    width: 100px;
+    height: 100px;
+    border: 1px #DFF3EE solid;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 5px 5px .7 black;
+}
+//Доработать секцию сервисы, подогнать адаптив...
+//Продукты--------
+.products{
+    .product__content{
+        min-height: 730px;
+        .product__label{
+            margin:0 0 10px 5px;
+            .product__icon{
+                display: inline;
+                i{
+                    font-size: 18px;
+                    color: #1617DB;
+                    
+                }
+            }
+            .product__name{
+                display: inline;
+                font-weight: 400;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #1617DB;
+            }
+        }
+        .product__title{
+            margin: 0 0 20px 0;
+        }
+        .product__description{
+            margin-bottom: 70px;
+        }
+        .product__images{
+            display: flex;
+            justify-content: center;
+            .product__item:not(:last-child){
+                width: 305px;
+                height: 388px;
+                border: 1px solid #E0EABB;
+                border-radius: 20%;
+                margin-right: 106px;
+
+            }
+            span{
+                    
+                .product__item{
+                    border: none solid #E0EABB;
+                    border-radius: 19%;
+                    background-color: #DCD2D4;
+                }
+            }
+            .item1{
+                background-color: #F8D7D9;
+            }
+            .item2{
+                background-color: #CCCCCC;
+            }
         }
     }
 }
