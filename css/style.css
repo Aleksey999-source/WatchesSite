@@ -128,7 +128,7 @@ h2 {
   transition: ease .45s;
   color: #1617DB;
   background-color: white;
-  border: solid 1px #1617DB;
+  padding: 15px 50px;
 }
 
 .burger {
@@ -237,7 +237,7 @@ h2 {
   transition: ease .45s;
   color: #1617DB;
   background-color: white;
-  border: solid 1px #1617DB;
+  padding: 15px 50px;
 }
 
 .promo__content .promo__info .promo__btns .btn_2 {
@@ -293,9 +293,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -405,6 +405,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .products .product__content .product__images .product__item:not(:last-child) {
@@ -413,12 +415,16 @@ h2 {
   border: 1px solid #E0EABB;
   border-radius: 20%;
   margin-right: 106px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .products .product__content .product__images span .product__item {
   border: none solid #E0EABB;
   border-radius: 19%;
   background-color: #DCD2D4;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .products .product__content .product__images .item1 {
@@ -427,5 +433,205 @@ h2 {
 
 .products .product__content .product__images .item2 {
   background-color: #CCCCCC;
+}
+
+.video__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 450px;
+}
+
+.video__content .divideo {
+  height: 360px;
+  position: relative;
+}
+
+.video__content .divideo #video {
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.video__content .video__icon2 {
+  width: 70px;
+  height: 70px;
+  border: 10px #CDCDCD solid;
+  -webkit-box-shadow: 0 0 5px 2px #CDCDCD;
+          box-shadow: 0 0 5px 2px #CDCDCD;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(205, 205, 205, 0.5);
+}
+
+.video__content .video__icon2 i {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #1617DB;
+  font-size: 18px;
+}
+
+.video__content .video__icon2--removei i {
+  display: none;
+}
+
+.video__content .video__text {
+  width: 400px;
+  height: 333px;
+}
+
+.video__content .video__text .video__description {
+  margin-top: 25px;
+}
+
+.video__content .video__text .video__button {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 64px;
+  border: 2px solid #E5E5E5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.video__content .video__text .video__button .icon__box {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #CDCDCD;
+  -webkit-box-shadow: 0 0 1px 1px #CDCDCD;
+          box-shadow: 0 0 1px 1px #CDCDCD;
+  background-color: #CDCDCD;
+}
+
+.video__content .video__text .video__button .icon__box .video__icon {
+  color: #1617DB;
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.video__content .video__text .video__button .icon__box .video__icon .fa-pause {
+  display: none;
+  font-size: 18px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 47%;
+  top: 53%;
+}
+
+.video__content .video__text .video__button:active {
+  opacity: .5;
+}
+
+.video__content .video__text .video__button .buttonText {
+  margin-top: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1617DB;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.comment__container {
+  min-height: 350px;
+}
+
+.comment__container .comment__box {
+  z-index: 1;
+  width: 703px;
+  height: 255px;
+  border: 2px dashed rgba(211, 207, 207, 0.5);
+  position: relative;
+  border-radius: 20px;
+}
+
+.comment__container .comment__box .comment__box2 {
+  padding: 34px 67px;
+  z-index: 2;
+  width: 691px;
+  height: 243px;
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+}
+
+.comment__container .comment__box .comment__box2 .comment {
+  width: 556px;
+  height: 96px;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 30px;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__image {
+  width: 57px;
+  height: 49px;
+  overflow: hidden;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__image img {
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__initials {
+  margin-right: 30px;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__initials .comment__name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__initials .comment__employee {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.comment__container .comment__box .comment__box2 .comment__author .comment__initials .comment__employee:after {
+  display: inline-block;
+  content: '';
+  width: 33px;
+  height: 1px;
+  background-color: #01010D;
+  opacity: .3;
+  margin-bottom: 4px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
