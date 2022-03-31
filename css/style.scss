@@ -536,6 +536,68 @@ h2{
         }
     }
 }
+//footer---------------------
+.footer{
+    min-height: 365px;
+    background-color: #F7F7F7;
+}
+.footer__content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    .footer__logo {
+        .logo {
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .footer__credits {
+            margin-top: 25px;
+            max-width: 169px;
+            line-height: 19.2px; 
+        }
+
+        .footer__social {
+            i{
+                font-size: 20px;
+                margin-right: 28px;
+            }
+            margin-top: 20px;
+        }
+    }
+
+    .footer__features {
+    }
+
+    .footer__about-us {
+    }
+
+    .footer__product {
+    }
+
+    .footer__subscribe {
+        .footer__email-input {
+            border: none;
+            border-radius: 5px;
+            padding: 9px 0 9px 18px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: 'Roboto';
+        }
+    }
+
+}
+
+.footer__item {
+    span{
+        font-weight: 600;
+    }
+}
+.footer__item:not(:last-child){
+    margin-bottom: 25px;
+}   
 
 
 
