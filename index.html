@@ -10,17 +10,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="promo" style="background-image: url(images/bg/Rectangle\ 58.png);">
+        <section class="promo" id="home" style="background-image: url(images/bg/Rectangle\ 58.png);">
             <div class="header">
                 <div class="header__content _container">
                     <div class="header__menu menu">
                         <nav class="menu__body">
                             <ul class="menu__list">
                                 <li><a href="#" class="menu__link">Главная</a></li>
-                                <li><a href="#" class="menu__link">Преимущества</a></li>
-                                <li><a href="#" class="menu__link">Продукты</a></li>
-                                <li><a href="#" class="menu__link">Видео</a></li>
-                                <input type="button" value="Купить" class="button">
+                                <li><a href="#feature" class="menu__link">Преимущества</a></li>
+                                <li><a href="#products" class="menu__link">Продукты</a></li>
+                                <li><a href="#video" class="menu__link">Видео</a></li>
+                                <button class="button">Купить</button>
                                 
                             </ul>
                         </nav>
@@ -53,7 +53,7 @@
             
 
         <main class="page">
-            <section class="service">
+            <section class="service" id="feature">
                 <div class="service__content _container">
                     <div class="service__title"><h2>Поддерживаемые функции</h2></div>
                     <div class="service__description _description">Эти часы созданы по последнему слову технологий.</div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="products" id="products">
                 <div class="product__content _container">
                     <div class="product__label">
                         <div class="product__icon"><i class="fa-brands fa-apple"></i></div>
@@ -164,12 +164,6 @@
                     </div>
                 </div>
             </section>
-            
-            
-            
-            
-            
-            
         </main>
 
         <footer class="footer">
@@ -208,11 +202,30 @@
                     <input type="text" class="footer__email-input" placeholder="Add Email">
                 </div>
             </div>
-
         </footer>
+        <div class="popup">
+            <div class="popup__wrap">
+                <div class="popup__form">
+                    <form action="#">
+                        <div class="popup__close"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="popup__inputs">
+                            <input type="text" name="firstName" placeholder="Имя" class="popup__input">
+                            <input type="text" name="lastName" placeholder="Фамилия" class="popup__input">
+                            <input type="tel" name="telephone" placeholder="Телефон" class="popup__input">
+                            <input type="email" name="email" id="email" placeholder="Электронная почта" class="popup__input">
+                        </div>
+
+                        
+                        <input type="checkbox" name="checkBox" id="checkBox" class="popup__ipnut">
+                        <label for="checkBox">подписаться на новости</label>
+                        <button class="popup__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/5305d69ca5.js" crossorigin="anonymous"></script>
- 
 </body>
 </html>

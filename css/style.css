@@ -679,6 +679,7 @@ h2 {
   font-size: 12px;
   font-weight: 400;
   font-family: 'Roboto';
+  outline: none;
 }
 
 .footer__item span {
@@ -687,5 +688,115 @@ h2 {
 
 .footer__item:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.popup {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.popup .popup__wrap {
+  position: relative;
+  padding: 0 20px;
+  border: 1px black solid;
+  background-color: #F7F7F7;
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.popup .popup__wrap .popup__form .popup__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.popup .popup__wrap .popup__form .popup__close i {
+  font-size: 16px;
+}
+
+.popup .popup__wrap .popup__form form {
+  margin-top: 75px;
+}
+
+.popup .popup__wrap .popup__form form .popup__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup .popup__wrap .popup__form form .popup__inputs .popup__input {
+  font-family: 'Roboto';
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin: 0 10px 10px 0;
+}
+
+.popup .popup__wrap .popup__form form #checkBox {
+  outline: none;
+  margin-top: 10px;
+}
+
+.popup .popup__wrap .popup__form form .popup__btn {
+  margin-top: 10px;
+  color: white;
+  background-color: #1617DB;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: 5px 5px .7 black;
+          box-shadow: 5px 5px .7 black;
+  padding: 15px 50px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  display: block;
+}
+
+.popup .popup__wrap .popup__form form .popup__btn:hover {
+  -webkit-transition: ease .45s;
+  transition: ease .45s;
+  color: #1617DB;
+  background-color: white;
+  padding: 15px 50px;
+}
+
+.popup--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

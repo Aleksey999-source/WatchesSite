@@ -34,3 +34,28 @@ function toggleVideo()
         video.pause();
     }
 }
+//Скрипт плавной прокрутки---------------------
+$(document).ready(function(){
+    $("a[href*='#']").on("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      e.preventDefault();
+      return false;
+    });
+  });
+  //popup-меню-------------------------------
+  let popupBtn = document.querySelector('.popup__btn')
+  let popup = document.querySelector('.popup');
+  let btn1 = document.querySelector('.btn_1');
+  let btn2 = document.querySelector('.button');
+  btn2.addEventListener('click', openPopup);
+  let closeIcon = document.querySelector('.popup__close');
+  popupBtn.addEventListener('click', openPopup);
+  closeIcon.addEventListener('click', openPopup);
+  btn1.addEventListener('click', openPopup);
+  function openPopup()
+  {
+      popup.classList.toggle('popup--active');
+  }
