@@ -77,7 +77,7 @@ body{
     font-family: $fontFamily;
     
 }
-//-------Заголовки----------------------
+//-------Заголовки----------------------//
 h1{
     font-weight: 700;
     font-size: 67px;
@@ -380,7 +380,6 @@ h2{
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
         background-color: rgba($color: #CDCDCD, $alpha: 0.5);
-        
         i{
             position: absolute;
             left: 53%;
@@ -389,8 +388,6 @@ h2{
             color: #1617DB;
             font-size: 18px;
         }
-
-
     }
     .video__icon2--removei{
         i{
@@ -662,11 +659,9 @@ h2{
 {
     .video__content{
     flex-wrap: wrap;
-    
-    justify-content: center;
-    text-align: center;
-    //    .divideo {
-    //    }
+        .divideo {
+            height: auto;
+        }
     //    #video{
 
     //    }
@@ -681,7 +676,7 @@ h2{
             // .video__description {
             // }
             .video__button {
-                margin: 0 auto;
+                
             }
        }
     }

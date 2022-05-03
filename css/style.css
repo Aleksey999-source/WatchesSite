@@ -790,17 +790,13 @@ h2 {
   .video__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+  }
+  .video__content .divideo {
+    height: auto;
   }
   .video__content .video__text {
     margin-top: 20px;
     width: 640px;
-  }
-  .video__content .video__text .video__button {
-    margin: 0 auto;
   }
 }
 
