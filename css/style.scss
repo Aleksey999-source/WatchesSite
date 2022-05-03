@@ -5,7 +5,7 @@
 //-------------------------------------------------------------------------------------------------------------------------------------
 
 h1, h2, h3{
-    margin: 0;
+    margin: 10;
 }
 
 //Переменные---------------------------------------------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ $md4: 480;
     @media (max-width:$md1 + px)
     {
     
-        max-width: 750px;
+        padding: 0 20px;
     }
 
     @media (max-width: $md2 + px)
@@ -64,8 +64,8 @@ $md4: 480;
     }
 
     @media (max-width: $md3 + px)
-    {
-
+    {   
+        padding: 0 10px;
     }
 }
 //-------------------------------------------------------------------------------------------------------------------------------------
@@ -75,6 +75,7 @@ $fontFamily: "Poppins", sans-serif;
 //-------------------------------------------------------------------------------------------------------------------------------------
 body{
     font-family: $fontFamily;
+    
 }
 //-------Заголовки----------------------
 h1{
@@ -257,11 +258,6 @@ h2{
             margin-top: 25px;
         }
         .service__main{
-            @media(max-width: $md1 + px){
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-               }
             display: flex;
             justify-content: space-between; 
             align-items: center;
@@ -337,29 +333,23 @@ h2{
         }
         .product__images{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
-            .product__item:not(:last-child){
+            .product__item{
                 width: 305px;
                 height: 388px;
                 border: 1px solid #E0EABB;
                 border-radius: 20%;
-                margin-right: 106px;
                 box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .5);
-            }
-            span{  
-                .product__item{
-                    border: none solid #E0EABB;
-                    border-radius: 19%;
-                    background-color: #DCD2D4;
-                    box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .5);
-                }
             }
             .item1{
                 background-color: #F8D7D9;
             }
             .item2{
                 background-color: #CCCCCC;
+            }
+            .item3{
+                background-color: #DCD2D4;
             }
         }
     }
@@ -492,7 +482,6 @@ h2{
             bottom: -2px;
             right: -2px;
             .comment {
-
                 width: 556px;
                 height: 96px;
             }
@@ -508,7 +497,6 @@ h2{
                     img{
                         box-shadow: 2px 2px 2px rgba($color: black, $alpha: .5);
                     }
-
                 }
                 .comment__initials {
                     margin-right: 30px;
@@ -641,8 +629,8 @@ h2{
                 margin-top: 75px;
                 .popup__inputs{
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
+                    justify-content: center;
                     .popup__input{
                         font-family: 'Roboto';
                         border-radius: 6px;
@@ -669,7 +657,70 @@ h2{
 .popup--active{
     display: flex;
 }
+//---------------------------------Адаптив-------------------------------------------------------------
+@media (max-width:$md1 + px)
+{
+    .video__content{
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    text-align: center;
+    //    .divideo {
+    //    }
+    //    #video{
 
+    //    }
+    //    .video__icon2{
 
+    //    }
+       .video__text {
+           margin-top: 20px;
+           width: 640px;
+            // .video__title {
+            // }
+            // .video__description {
+            // }
+            .video__button {
+                margin: 0 auto;
+            }
+       }
+    }
+    
+ 
+    .icon__box {
+    }    
+}
+@media (max-width: $md2 + px)
+{
+    .service__main{
+    flex-direction: column;
+        .service__items{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            .service__item{
+                margin: 10px auto;
+            }
+        }
+    }      
+    //----------------------
+    .product__images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product__item{
+            margin-bottom: 50px;
+        }
+    }
 
+}
 
+@media (max-width: $md3 + px)
+{
+
+}
+
+@media (max-width: $md4 + px)
+{
+
+}
