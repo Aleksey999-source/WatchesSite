@@ -52,10 +52,18 @@ $(document).ready(function(){
   let btn2 = document.querySelector('.button');
   btn2.addEventListener('click', openPopup);
   let closeIcon = document.querySelector('.popup__close');
-  popupBtn.addEventListener('click', openPopup);
-  closeIcon.addEventListener('click', openPopup);
+  popupBtn.addEventListener('click', closePopup);
+  closeIcon.addEventListener('click', closePopup);
   btn1.addEventListener('click', openPopup);
   function openPopup()
   {
-      popup.classList.toggle('popup--active');
+      popup.classList.add('popup--active');
+      $('body').css('overflow', 'hidden');
+  }
+
+
+  function closePopup()
+  {
+      popup.classList.remove('popup--active');
+      $('body').css('overflow', 'visible');
   }
