@@ -244,6 +244,16 @@ h2{
         top: 0;
         right: -200px;
         @media(max-width:$md1+px){
+            //display: none;
+            img{
+                width: 650px;
+                height: 411px;
+            }
+
+            top: 0;
+            right: -50;
+        }
+        @media(max-width:$md2 + px){
             display: none;
         }
     }
@@ -464,7 +474,7 @@ h2{
     min-height: 350px;
     .comment__box {
         z-index: 1;
-        width: 703px;
+        width: 640px;
         height: 255px;
         border: 2px dashed rgba($color: #D3CFCF, $alpha: .5);
         position: relative;
@@ -472,7 +482,7 @@ h2{
         .comment__box2 {
             padding: 34px 67px;
             z-index: 2;
-            width: 691px;
+            width: 633px;
             height: 243px;
             background-color: #F4F4F4;
             border-radius: 20px;
@@ -712,6 +722,17 @@ h2{
 //------------------------------md3
 @media (max-width: $md3 + px)
 {
+    //---------promo------------
+    .promo{
+        .promo__content{
+            .promo__info{
+                max-width: 100%;
+            }
+        }
+    }
+
+
+    //---------comments---------
     .comments{
         min-height: 450px;
         .comment__container{
@@ -755,10 +776,10 @@ h2{
 @media (max-width: $md4 + px)
 {
     h1{
-        font-size: 33px;
+        font-size: 40px;
     }
     h2{
-        font-size: 27px;
+        font-size: 30px;
     }
     body{
 
@@ -809,15 +830,16 @@ h2{
         min-height: 550px;
         .comment__container{
             .comment__box{
-                width: 323px;
-                height: 485px;
+                width: 303px;
+                height: 495px;
                 .comment__box2{
-                    padding: 24px 47px;
-                    width: 311px;
-                    height: 473px;
+                    padding: 15px;
+                    width: 291px;
+                    height: 483px;
                     .comment{
                         width: 216px;
                         height: 326px;
+                        text-align: justify;
                     }
                 }
             }
@@ -827,7 +849,7 @@ h2{
     .promo{
         .promo__content{
             .promo__info{
-                width: 250px;
+                width: 100%;
                 .promo__btns{
                     margin: 0;
                     .btn_1{
@@ -853,7 +875,7 @@ h2{
             height: 350px;
         }
     }
-    //--------
+    
     //----video-------------------
     .video__content{
             .divideo {

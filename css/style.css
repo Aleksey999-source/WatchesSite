@@ -284,6 +284,17 @@ h2 {
 
 @media (max-width: 1147.59px) {
   .promo__content .promo__image {
+    top: 0;
+    right: -50;
+  }
+  .promo__content .promo__image img {
+    width: 650px;
+    height: 411px;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo__content .promo__image {
     display: none;
   }
 }
@@ -557,7 +568,7 @@ h2 {
 
 .comment__container .comment__box {
   z-index: 1;
-  width: 703px;
+  width: 640px;
   height: 255px;
   border: 2px dashed rgba(211, 207, 207, 0.5);
   position: relative;
@@ -567,7 +578,7 @@ h2 {
 .comment__container .comment__box .comment__box2 {
   padding: 34px 67px;
   z-index: 2;
-  width: 691px;
+  width: 633px;
   height: 243px;
   background-color: #F4F4F4;
   border-radius: 20px;
@@ -861,6 +872,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .promo .promo__content .promo__info {
+    max-width: 100%;
+  }
   .comments {
     min-height: 450px;
   }
@@ -897,10 +911,10 @@ h2 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 33px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 27px;
+    font-size: 30px;
   }
   ._description {
     font-size: 18px;
@@ -956,20 +970,21 @@ h2 {
     min-height: 550px;
   }
   .comments .comment__container .comment__box {
-    width: 323px;
-    height: 485px;
+    width: 303px;
+    height: 495px;
   }
   .comments .comment__container .comment__box .comment__box2 {
-    padding: 24px 47px;
-    width: 311px;
-    height: 473px;
+    padding: 15px;
+    width: 291px;
+    height: 483px;
   }
   .comments .comment__container .comment__box .comment__box2 .comment {
     width: 216px;
     height: 326px;
+    text-align: justify;
   }
   .promo .promo__content .promo__info {
-    width: 250px;
+    width: 100%;
   }
   .promo .promo__content .promo__info .promo__btns {
     margin: 0;
