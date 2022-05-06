@@ -897,13 +897,13 @@ h2 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 37px;
+    font-size: 33px;
   }
   h2 {
     font-size: 27px;
   }
   ._description {
-    font-size: 14px;
+    font-size: 18px;
   }
   .service {
     min-height: 1500px;
