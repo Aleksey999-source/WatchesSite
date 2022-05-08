@@ -197,8 +197,13 @@ h2 {
   bottom: 0;
 }
 
+.burger__menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .burger__menu {
+    display: block;
     position: fixed;
     top: 0;
     left: -100%;
@@ -1069,51 +1074,6 @@ h2 {
   }
   .video__content .video__text .video__button .icon__box {
     margin: 0 30px 0 0;
-  }
-}
-
-.example {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-.example .example__item {
-  -webkit-box-shadow: 0 13px 19px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 13px 19px rgba(0, 0, 0, 0.6);
-  padding: 35px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
-  margin: 0 20px 20px 0;
-}
-
-.example .example__item .example__title {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.example .example__item:last-child {
-  margin: 0 0 20px 0;
-}
-
-@media (max-width: 768px) {
-  .example {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px 0;
-  }
-  .example .example__item {
-    margin: 0 10px 20px 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-  }
-  .example .example__item:last-child {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

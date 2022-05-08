@@ -9,7 +9,6 @@
     if (burger.classList.contains('burger--active'))
     {
         document.body.style.overflow = "hidden";
-        console.log('hidden works')
     }
     else
     {
