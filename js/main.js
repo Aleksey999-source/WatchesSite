@@ -1,10 +1,32 @@
 "use strict";
 //Бургер меню------------------------------
     let burger = document.querySelector('.burger');
+    let burgerMenu = document.querySelector('.burger__menu');
     burger.addEventListener('click', function()
 {
-    burger.classList.toggle('burger--active')
+    burger.classList.toggle('burger--active');
+    burgerMenu.classList.toggle('burger--active');
+    if (burger.classList.contains('burger--active'))
+    {
+        document.body.style.overflow = "hidden";
+        console.log('hidden works')
+    }
+    else
+    {
+        document.body.style.overflow = "visible";
+        
+    }
 });
+const hrefBurger = document.querySelectorAll('.burger__href');
+for (let i = 0; i < hrefBurger.length; i++)
+{
+    hrefBurger[i].addEventListener('click', removeState);
+}
+function removeState() {
+    $('body').css('overflow', 'visible');
+    burger.classList.remove('burger--active');
+    burgerMenu.classList.remove('burger--active');
+}
 //Видеоплеер-------------------------------
 const video = document.querySelector('#video');
 const playBtn = document.querySelector('.video__icon2')
